@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #faf5f5;
+    color: rgb(218, 71, 96);
+    z-index: 1000;
+}
+h3{
+    margin-top: 10px;
+    font-size: 13px;
+    
+}
+.fixed-menu nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.fixed-menu ul {
+    list-style-type: none;
+}
+
+.fixed-menu ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.fixed-menu a {
+    color: rgb(218, 71, 96);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fixed-menu a:hover {
+    color: #ddd;
+}
+
+main {
+    padding-top: 60px; /* Space for fixed menu */
+}
+
+section {
+    padding: 50px;
+    height: 600px; /* Just for demonstration */
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    margin-top: 4%;
+    padding-left: 5px;
+}
+button{
+    margin-top: 2%;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(218, 71, 96);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+button:hover{
+    background-color: rgb(228, 115, 134);
+    
+}
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(odd) {
+    background-color: #e2e2e2;
+}
